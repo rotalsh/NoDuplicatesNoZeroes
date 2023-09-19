@@ -4,7 +4,7 @@
 int main() {
 
     for (int x = 100; x < 500; x++) {
-        for (int y = 100; y < 1000 - x; y++) {
+        for (int y = x; y < 1000 - x; y++) {
             int sum = x + y;
             std::string total = std::to_string(x) + std::to_string(y) + std::to_string(sum);
 
